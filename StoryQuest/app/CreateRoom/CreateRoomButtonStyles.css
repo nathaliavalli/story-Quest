@@ -1,0 +1,332 @@
+/* CreateRoomButtonStyles.css */
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  white-space: nowrap;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s;
+}
+
+.big-button:hover .tooltip,
+.big-button:active .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .Join-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.room-id-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 16px;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  background-color: #f9f9f9;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.room-id-input:focus {
+  border-color: #4a6baf;
+  box-shadow: 0 0 8px rgba(74, 107, 175, 0.3);
+  background-color: white;
+}
+
+.room-id-input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+  
+  .title-container {
+    text-align: center;
+    margin-bottom: 1px;
+  }
+  
+  .title-text {
+    font-size: 2.5rem;
+    color: #4a6baf;
+    font-weight: bold;
+  }
+  
+  /* Progress indicators */
+  .progress-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .progress-bubble {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 3px solid #ccc;
+  }
+  
+  .progress-bubble.active {
+    background-color: #4caf50;
+    color: white;
+    border-color: #2e7d32;
+  }
+  
+  /* Step container */
+  .step-container {
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .step-container h2 {
+    font-size: 1.8rem;
+    color: #4a6baf;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Big Button Styles */
+  .big-button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    margin-bottom: 1.5rem;
+  }
+  
+  .big-button {
+    background-color: #f9f9f9;
+    border: 3px solid #ddd;
+    border-radius: 12px;
+    padding: 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    height: 80px;
+  }
+  
+  .big-button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .story-button {
+    background-color: #e3f2fd;
+    border-color: #90caf9;
+    color: #4a6baf;
+  }
+  
+  .story-button:hover {
+    background-color: #bbdefb;
+  }
+  
+  .player-button {
+    background-color: #e8f5e9;
+    border-color: #a5d6a7;
+    color: #4a6baf;
+  }
+  
+  .player-button:hover {
+    background-color: #c8e6c9;
+  }
+  
+  .player-icons {
+    display: flex;
+  }
+  
+  .player-icon {
+    font-size: 1.5rem;
+    margin: 0 2px;
+  }
+  
+  .difficulty-button {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    color: #4a6baf;
+  }
+  
+  .difficulty-button.easy {
+    background-color: #e8f5e9;
+    border-color: #81c784;
+  }
+  
+  .difficulty-button.medium {
+    background-color: #fff3e0;
+    border-color: #ffb74d;
+  }
+  
+  .difficulty-button.hard {
+    background-color: #ffebee;
+    border-color: #ef9a9a;
+  }
+  
+  .difficulty-emoji {
+    font-size: 1.8rem;
+    margin-right: 8px;
+  }
+  
+  .button-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  /* Back step button */
+  .back-step-button {
+    background-color: #f5f5f5;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #666;
+  }
+
+.back-step-button:hover {
+  background-color: #e0e0e0;
+}
+  
+  /* Summary styles */
+  .summary-container {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .summary-item {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #4a6baf;
+  }
+  
+  /* Create room button */
+  .create-room-button {
+    background-color: #4caf50;
+    border-color: #2e7d32;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+  }
+  
+  .create-room-button:hover {
+    background-color: #43a047;
+  }
+  
+  .create-emoji {
+    font-size: 1.8rem;
+    margin-right: 8px;
+  }
+  
+  .final-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .home-button-container {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+.button-box {
+  border: 5px solid white;
+  border-radius: 45px;
+  display: inline-block;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 3);
+}
+  
+  /* Responsive adjustments */
+  @media (min-width: 768px) {
+    .big-button-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .big-button {
+      width: 45%;
+    }
+    
+    .difficulty-button {
+      width: 30%;
+    }
+  }
+
+  /*QR code style*/
+  .qr-code-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.qr-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: fit-content;
+    border: 3px solid #ddd;
+}
+
+.qr-instruction {
+    font-size: 1.2rem;
+    color: #4a6baf;
+    font-weight: bold;
+    margin-top: 10px;
+}

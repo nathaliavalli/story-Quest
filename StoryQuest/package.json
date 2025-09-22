@@ -1,0 +1,50 @@
+{
+  "name": "StoryQuest",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest --watchAll"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "firebase": "^10.14.1",
+    "framer-motion": "^12.5.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsqr": "^1.4.0",
+    "motion": "^12.4.10",
+    "next": "^15.1.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-qrcode-logo": "^3.0.0",
+    "save-dev": "^0.0.1-security",
+    "three": "^0.135.0",
+    "use-sound": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.26.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/howler": "^2.2.12",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^20.17.22",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19",
+    "babel-jest": "^29.7.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "postcss": "^8.5.3",
+    "react-test-renderer": "^18.3.1",
+    "tailwindcss": "^3.4.17",
+    "ts-jest": "^29.2.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}

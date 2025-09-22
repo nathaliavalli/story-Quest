@@ -1,0 +1,177 @@
+/* css styling for home page buttons*/
+
+/*applies to all buttons on homepage*/
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    border: none;
+    font-family: 'Slackey', sans-serif;
+    text-align: center;
+    font-size: 10px;
+    width: 30em;
+    max-width: 40em;
+    padding: 3em;
+    transition: all 0.4s;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease-out;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px; /* Width of the sliding highlight */
+    height: 100%;
+    transform: translateX(12px) rotate(12deg); /* Initial position and rotation */
+    transition: all 1s ease-out; /* Smooth transition for the sliding effect */
+    opacity: 0.5; /* Semi-transparent effect */
+}
+
+/* Hover effect for the pseudo-element */
+.button:hover::before {
+    transform: translateX(-40px) rotate(12deg); /* Move the highlight to the left */
+    opacity: 0; /* Fade out the highlight */
+}
+
+/* Text styling inside the button */
+.button span {
+    position: relative; /* Ensures text stays above the pseudo-element */
+    z-index: 1; /* Ensures text is on top */
+    font-size: 2.5em;
+    line-height: 1;
+    transition: 0.4s;
+}
+
+/*Adding circles for menu buttons*/
+.join-button, .create-button, .test-button{
+    margin-left: 30px; /* Push button right to make space for circle */
+    width: 33em;
+}
+
+/*Color scheme of the join button*/
+.create-button {
+    background: linear-gradient(to right, #0ba360, #3cba92);
+    box-shadow: 0px 5px 56px -20px #0ba360;
+}
+.back-button {
+    background: linear-gradient(to right, #ad0968, #ad0968);
+    box-shadow: 0px 5px 56px -17px #ad0968;
+}
+.home-button {
+    background: linear-gradient(to right, #f0af37, #f0af37);
+    box-shadow: 0px 5px 56px -17px #f0af37;
+}
+.join-button {
+    background: linear-gradient(to right, #5676e8, #5676e8);
+    box-shadow: 0px 5px 56px -20px #5676e8;
+}
+.test-button{
+    background: linear-gradient(to right, #f20000, #f20000);
+    box-shadow: 0px 5px 56px -20px #f20000;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 2.5em;
+    line-height: 1;
+    transition: 0.4s;
+}
+
+/* Text that appears after hovering over button*/
+/* This will add the word when you hover on the button */
+.join-button span:after,
+.create-button span:after {
+    content: 'Room';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.7s;
+}
+.test-button span:after {
+    content: 'TEST';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.7s;
+}
+.home-button span:after,
+.profile-button span:after {
+    content: 'Menu';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.7s;
+}
+.back-button span:after {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.7s;
+    font-size: 22px;
+}
+
+/* Apply hover effect only to buttons with span:after */
+.join-button:hover span,
+.create-button:hover span,
+.test-button:hover span,
+.home-button:hover span,
+.profile-button:hover span {
+    padding-right: 3.80em;
+}
+
+.join-button:hover span:after,
+.create-button:hover span:after,
+.test-button:hover span:after,
+.home-button:hover span:after,
+.profile-button:hover span:after {
+    opacity: 4;
+    right: 0;
+}
+
+/*Spacing between icon and text on the right, for buttons without circles*/
+.icon-spacing {
+    margin-right: 10px;
+}
+
+/*shadowing for the icons*/
+.svg-icon {
+    filter: drop-shadow(3px 3px 2px rgb(0 0 0 / 0.2));
+}
+
+/* Container for button and circle */
+.button-with-attached-circle {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Static circle */
+.button-circle {
+    position: absolute;
+    left: -5px;
+    width: 93px;
+    height: 93px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: -4px 3px 0 rgba(0, 0, 0, 0.2); /*shadow around the circle*/
+}
+
+
+

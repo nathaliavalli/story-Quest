@@ -1,0 +1,43 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #ff6f61; /* Bright Coral */
+  --ifm-color-primary-dark: #f65d5b; /* Bold Pinkish Red */
+  --ifm-color-primary-darker: #f24e4a; /* Warm Red */
+  --ifm-color-primary-darkest: #e03f37; /* Strong Red */
+  --ifm-color-primary-light: #f9a4a0; /* Soft Peach */
+  --ifm-color-primary-lighter: #f7c0b2; /* Light Peach */
+  --ifm-color-primary-lightest: #ffccbb; /* Light Coral */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 232, 219, 0.8); /* Light, soft background */
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #ff6b81; /* Soft Coral Red */
+  --ifm-color-primary-dark: #ff5177; /* Bold Pinkish Red */
+  --ifm-color-primary-darker: #ff3d6b; /* Warm Deep Red */
+  --ifm-color-primary-darkest: #f52f5e; /* Intense Pink */
+  --ifm-color-primary-light: #ff8b9d; /* Light Coral Pink */
+  --ifm-color-primary-lighter: #ff9fa8; /* Faded Pinkish Peach */
+  --ifm-color-primary-lightest: #ffb3b9; /* Soft Pale Pink */
+  --ifm-footer-background-color: #2c2f3b; /* Darker background for footer */
+}
+
+.medium-zoom-overlay{
+  /*background-color: #00a400 !important;*/
+  z-index: 999;
+}
+
+.medium-zoom-image--opened{
+  z-index: 1000;
+}
+
+#atlwdg-trigger.atlwdg-trigger.atlwdg-RIGHT{
+  background-color: #629aee;
+}
