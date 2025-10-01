@@ -19,14 +19,7 @@ Augmentative and Alternative Communication (AAC), and children who communicate v
  - Cloze Phrase - A common technique leveraged in speech therapy. Phrases or sentences with words missing that are intended to be filled in by the reader/listener. Cloze phrases are used to assess reading comprehension and to help students learn to predict word meanings. 
 
 ## Hosted Link
-These are the active domains you can visit:
-User Friendly Domain (set to shut down in June):
-https://storyquest.world
-
-OR
-
-The original Firebase Domain (which Temple will take over after the final demo):
-https://project-aac-game-team-b--storyquest-fcdc2.us-central1.hosted.app
+Under construction
 
 ## How to run locally
 **Be sure to have your Firebase configured after doing these steps, otherwise some features may not work as intended!**
